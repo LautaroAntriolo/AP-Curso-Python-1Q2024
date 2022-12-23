@@ -15,24 +15,31 @@ creds = service_account.Credentials.from_service_account_file(KEY, scopes=SCOPES
 service = build('sheets', 'v4', credentials=creds)
 sheet = service.spreadsheets()
 
-# Llamada a la api
-result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 1!E2:E14').execute()
+# Llamamos a la API
+result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 1!E2:E27').execute()
+print(result)
 # Extraemos values del resultado
 values = result.get('values',[])
-# print(len(values))
 #%%
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 def edad(Edades):
-    edadarr = []
+    edadNum = []
+    edadStr = []
+    
     for i in range(len(Edades)):
         fecha_nacimiento = datetime.strptime(values[i][0], "%d/%m/%Y")
         edad = relativedelta(datetime.now(), fecha_nacimiento)
-        print(f"{edad.years} años, {edad.months} meses y {edad.days} días")
+        edadStr.append(f"{edad.years} años, {edad.months} meses y {edad.days} días")
         años = edad.years
         meses = edad.months
         dias = edad.days
-        edadarr.append(f'{años}-{meses}-{dias}')
-    return edadarr
-edad(values)
+        edadNum.append(f'{años}-{meses}-{dias}')
+    return [edadStr,edadNum]
+edad(values)[1]
 # %%
+key_list = ['name', 'age', 'address']
+value_list = ['Johnny', '27', 'New York']
+
+dict_from_list = dict(zip(key_list, value_list))
+print(dict_from_list)
