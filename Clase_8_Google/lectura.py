@@ -19,7 +19,7 @@ sheet = service.spreadsheets()
 result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 1!E2:E14').execute()
 # Extraemos values del resultado
 values = result.get('values',[])
-print(len(values))
+# print(len(values))
 #%%
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
