@@ -16,11 +16,17 @@ service = build('sheets', 'v4', credentials=creds)
 sheet = service.spreadsheets()
 
 # Llamamos a la API
-result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 1!E2:E27').execute()
-print(result)
+resultados = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 2!E2:E34',majorDimension='COLUMNS').execute()
 # Extraemos values del resultado
-values = result.get('values',[])
-#%%
+valores = resultados.get('values',[])
+print(valores)
+
+
+########################################################################################################################
+
+
+
+#%% 
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 def edad(Edades):
