@@ -6,8 +6,10 @@ from google.oauth2 import service_account
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 # KEY = 'Python\Clase_8_Google\key.json'
 KEY = 'key.json'
+
 # Escribe aquí el ID de tu documento:
 SPREADSHEET_ID = '1WOSvX9Cvv5c7NRLAzbwa_z1CybiQHkC2VzsU31QOZAw'
+
 
 creds = None
 creds = service_account.Credentials.from_service_account_file(KEY, scopes=SCOPES)
@@ -16,35 +18,12 @@ service = build('sheets', 'v4', credentials=creds)
 sheet = service.spreadsheets()
 
 # Llamamos a la API
-resultados = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 2!E2:E34',majorDimension='COLUMNS').execute()
+resultados = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 2!F2:F34',majorDimension='COLUMNS').execute()
+# print(resultados)
 # Extraemos values del resultado
-print(resultados)
-valores = resultados.get('values')
-# print(valores[0])
+valores = resultados['values']
+print(valores[0])
+
 ########################################################################################################################
 
-
-
-#%% 
-# from datetime import datetime
-# from dateutil.relativedelta import relativedelta
-# def edad(Edades):
-#     edadNum = []
-#     edadStr = []
-    
-#     for i in range(len(Edades)):
-#         fecha_nacimiento = datetime.strptime(values[i][0], "%d/%m/%Y")
-#         edad = relativedelta(datetime.now(), fecha_nacimiento)
-#         edadStr.append(f"{edad.years} años, {edad.months} meses y {edad.days} días")
-#         años = edad.years
-#         meses = edad.months
-#         dias = edad.days
-#         edadNum.append(f'{años}-{meses}-{dias}')
-#     return [edadStr,edadNum]
-# edad(valores)[1]
 # %%
-# key_list = ['name', 'age', 'address']
-# value_list = ['Johnny', '27', 'New York']
-
-# dict_from_list = dict(zip(key_list, value_list))
-# print(dict_from_list)
