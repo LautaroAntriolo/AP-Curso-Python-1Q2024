@@ -22,7 +22,7 @@ resultados = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas 
 # print(resultados)
 # Extraemos values del resultado
 valores = resultados['values']
-print(valores[0])
+# print(valores[0])
 
 ########################################################################################################################
 

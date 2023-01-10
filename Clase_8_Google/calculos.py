@@ -1,45 +1,69 @@
+#%%
 import lectura 
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-
-fechanac = lectura.sheet.values().get(spreadsheetId=lectura.SPREADSHEET_ID, range='Respuestas de Formulario 2!F2:F34',majorDimension='COLUMNS').execute()
+import matplotlib.pyplot as plt
+import numpy as np
+#%%
+#Obtenemos la fecha de nacimiento que está en el formulario
+fechanac = lectura.sheet.values().get(spreadsheetId=lectura.SPREADSHEET_ID,range='Respuestas de Formulario 2!F2:F34',majorDimension='COLUMNS').execute()
 fecha = fechanac.get('values',[])
-name = lectura.sheet.values().get(spreadsheetId=lectura.SPREADSHEET_ID, range='Respuestas de Formulario 2!B2:B34',majorDimension='COLUMNS').execute()
+# print(len(fecha[0]))
+#Obtenemos el nombre que está en el formulario
+name = lectura.sheet.values().get(spreadsheetId=lectura.SPREADSHEET_ID,range='Respuestas de Formulario 2!B2:B34',majorDimension='COLUMNS').execute()
 nombre = name.get('values',[])
-surname = lectura.sheet.values().get(spreadsheetId=lectura.SPREADSHEET_ID, range='Respuestas de Formulario 2!C2:C34',majorDimension='COLUMNS').execute()
+# print(len(nombre[0]))
+#Obtenemos el apellido que está en el formulario
+surname = lectura.sheet.values().get(spreadsheetId=lectura.SPREADSHEET_ID,range='Respuestas de Formulario 2!C2:C34',majorDimension='COLUMNS').execute()
 apellido = surname.get('values',[])
-# print(nombre)
+
+#%%
 def dicUsers(Edades):
-    '''
-    a esta función le paso un array de números y lo que hago es obtener un diccionario
-    donde la clave sea el nombre y apellido, y como valor tenga otro diccionario con claves y valores referentes
-    a años, meses y días.
-    la rta tien este formato: 
-    {
-        nombre_apellido = {year: añosActuales, meses: mesesActuales, dias: diasActuales}
-        nombre_apellido = {year: añosActuales, meses: mesesActuales, dias: diasActuales}
-        
-        }
-    '''
     diccionario = {}
-    for i in range(len(Edades)):
-        fecha_nacimiento = datetime.strptime(fecha[0][i],"%d/%m/%Y")
+    for i in range(0,len(Edades[0])):
+        fec = str(Edades[0][i])
+        fecha_nacimiento = datetime.strptime(fec,"%d/%m/%Y")
         edad = relativedelta(datetime.now(), fecha_nacimiento)
         años = edad.years
         meses = edad.months
         dias = edad.days
         diccionario[f'{nombre[0][i]}_{apellido[0][i]}'] = {'year': f'{años}','meses': f'{meses}','dias': f'{dias}'}
     return diccionario
-# dicUsers(fecha[0])
 
-
+#%%
 def ElegirDato(diccionarioCompuesto, dato):
     key = []
-    for valores in dicUsers(fecha[0]).values():
-        valor = valores[f'{dato}']
-        key.append(valor)
-    return key
+    key.extend(diccionarioCompuesto.values())
+    fact = []
+    for i in range(len(key)):
+        fact.append(key[i][f'{dato}'])
+    return fact
+# %%
+'''
+Para graficarlo voy a generar una función que cree un diccionario 
+para saber la cantidad de ocurrencias de cada dato.
+'''
+name_counts = {}
+datos = ElegirDato(dicUsers(fecha), 'year')
+# print(datos)
+for name in datos:
+    if name in name_counts:
+        name_counts[name] += 1
+  # Si el nombre no existe en el diccionario, lo añadimos y le asignamos el valor 1
+    else:
+        name_counts[name] = 1
+# print(name_counts)
+# %%
+import matplotlib.pyplot as plt
 
-print(ElegirDato(dicUsers(fecha[0]),'year'))
+# Creamos una lista con los nombres y otra con el número de ocurrencias
 
 
+
+# Creamos el gráfico de barras
+plt.bar(names, counts)
+
+# Mostramos el gráfico
+plt.show()
+
+# %%
