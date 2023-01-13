@@ -22,7 +22,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Enviar una solicitud a la página web y obtener el código fuente
-pagina_web = 'https://es.wikipedia.org/wiki/Lionel_Messi#Primeros_a%C3%B1os'
+pagina_web = 'https://nuestrosanimales.netlify.app/index.html'
 solicitud = requests.get(pagina_web)
 contenido = solicitud.text
 
