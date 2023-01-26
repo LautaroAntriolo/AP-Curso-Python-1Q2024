@@ -7,6 +7,5 @@ Lib/
 Scripts/
 *.cfg
 entornoVirtual
-
-
+entornoVirtual/
 
