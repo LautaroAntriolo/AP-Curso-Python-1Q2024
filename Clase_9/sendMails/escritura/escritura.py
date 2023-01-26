@@ -14,14 +14,13 @@ creds = service_account.Credentials.from_service_account_file(KEY, scopes=SCOPES
 service = build('sheets', 'v4', credentials=creds)
 sheet = service.spreadsheets()
 
-nombres = [['Lautaro', 'Lionel',  'Nicolas', 'Manuela', 'Camila', 'Carmina', 'Angel', 'Alexis', 'Nahuel', 'Emiliano', 'Angela','Julian', 'Enzo', 'Carla', 'Rocio', 'Lucrecia']]
 # Debe ser una matriz por eso el doble [[]]
 
-values = [['Lautaro', 'Martinez', '40090987', '30']]
+values = [['Esto es un poema de amor', f'Esto puede ser cualquier cosa.']]
 
 # Llamamos a la api
 result = sheet.values().append(spreadsheetId=SPREADSHEET_ID,
-							range='B1:C4',
+							range='H2',
 							valueInputOption='USER_ENTERED',
 							body={'values':values}).execute()
 print(f"Datos insertados correctamente.\n{(result.get('updates').get('updatedCells'))}")
