@@ -16,12 +16,12 @@ creds = service_account.Credentials.from_service_account_file(KEY, scopes=SCOPES
 
 service = build('sheets', 'v4', credentials=creds)
 sheet = service.spreadsheets()
-
 # Llamamos a la API
-resultados = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 2!F2:F34',majorDimension='COLUMNS').execute()
-# print(resultados)
+resultados = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 2!F2:F34',majorDimension='ROWS').execute()
+
+print(resultados)
 # Extraemos values del resultado
-valores = resultados['values']
+# valores = resultados['values']
 # print(valores[0])
 
 ########################################################################################################################
@@ -50,7 +50,7 @@ sheet = service.spreadsheets()
 #%%
 # Llamamos a la API
 resultados = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range='Respuestas de Formulario 2!F2:F34',majorDimension='COLUMNS').execute()
-# print(resultados)
+print(resultados)
 # Extraemos values del resultado
-valores = resultados['values']
+# valores = resultados['values']
 # print(valores[0])
