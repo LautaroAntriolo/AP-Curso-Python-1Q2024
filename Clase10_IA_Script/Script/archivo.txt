@@ -1,3 +1,13 @@
-2023-01-28 = [46, 9, 69, 55, 79, 29, 79, 73, 79, 13]
-2023-01-28 = [70, 73, 95, 80, 92, 23, 93, 96, 84, 1]
-2023-01-28 = [53, 81, 31, 0, 58, 28, 44, 61, 59, 0]
+# Alfonsina Storni
+No me acerques una rosa,
+Que el perfume dulce y suave
+Aduela demasiado al alma mía.
+
+No me acerques una amapola
+Que el color vermellón de la vida
+Oculta el duelo de mi herida.
+
+No me acerques un clavel tampoco,
+Porque sus nobleza blanda y pura,
+Recordaría las horas serenas.
+hola
