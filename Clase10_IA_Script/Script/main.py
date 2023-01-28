@@ -1,16 +1,21 @@
+import random
+def numeros(n):
+    lista = []
+    for i in range(n):
+        numeroRandom = random.randint(0,99)
+        lista.append(numeroRandom)
+    return lista
 
-def quiniela(dic):
+
+def quiniela():
     dia = str(datetime.datetime.now().date())
-    dic[dia] = []
-    for i in range(0,len(N10)):
-        dic[dia].append(N10[i])
-    return dic
+    cadenaDeTExto = f'{dia} = {numeros(10)}'
+    return cadenaDeTExto
 
-dic ={'2023-01-26': [39, 55, 18, 47, 63, 46, 80, 69, 65, 31]}
 
 if __name__ == '__main__':
-    from numeros import N10
     import datetime
-    # quiniela(dic)
-    print(quiniela(dic))
+    archivo = open('./Python/Clase10_IA_Script/Script/archivo.txt','a')
+    archivo.write(f'\n{quiniela()}')
+    archivo.close()
     

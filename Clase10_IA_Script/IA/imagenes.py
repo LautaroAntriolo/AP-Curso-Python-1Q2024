@@ -23,5 +23,5 @@ def img(mje):
        f.write(response)
     return image_url, nameIMG
 
-imagen = img("una pintura realista de un perro blanco con un traje de astronauta en la superficie de la luna")
+imagen = img(f'Como sería la copa libertadores de futbol si fuera diseñada por el imperio romano')
 print(imagen)
