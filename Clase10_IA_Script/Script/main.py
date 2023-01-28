@@ -15,6 +15,6 @@ def quiniela():
 
 if __name__ == '__main__':
     import datetime
-    with open('Python/Clase10_IA_Script/Script/quiniela.txt', 'a+') as archivo:
+    with open('C:\Lautaro\AprendeProgramando\CursoPython2023\Python\Clase10_IA_Script\Script\quiniela.txt', 'a+') as archivo:
         archivo.write(f'\n{quiniela()}')
     
