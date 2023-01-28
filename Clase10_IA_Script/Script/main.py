@@ -2,13 +2,13 @@ import random
 def numeros(n):
     lista = []
     for i in range(n):
-        numeroRandom = random.randint(0,99)
+        numeroRandom = random.randint(0,45)
         lista.append(numeroRandom)
     return lista
 
 
 def quiniela():
-    dia = str(datetime.datetime.now().date())
+    dia = datetime.datetime.now()
     cadenaDeTExto = f'{dia} = {numeros(10)}'
     return cadenaDeTExto
 
