@@ -12,7 +12,7 @@ def quiniela():
     cadenaDeTExto = f'{dia} = {numeros(10)}'
     return cadenaDeTExto
 
-
+## Si sigue sin funcionar el programador de tareas, buscar hacer un bucle for y un time para que espere cierto tiempo
 if __name__ == '__main__':
     import datetime
     with open('C:\Lautaro\AprendeProgramando\CursoPython2023\Python\Clase10_IA_Script\Script\quiniela.txt', 'a+') as archivo:
