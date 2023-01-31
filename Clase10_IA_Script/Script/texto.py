@@ -14,7 +14,9 @@ def prompt(preg_men):
   return (f'{rta}')
 
 ## Prueba de funcionalidad
-# mensaje = prompt()
-# print(mensaje)
-
+mensaje = prompt("como sumar en python")
+print(mensaje)
+import os
+clave = os.getenv("API_KEY")
+print(clave)
 

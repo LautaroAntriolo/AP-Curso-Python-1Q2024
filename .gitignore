@@ -12,6 +12,11 @@ entornoVirtual/
 Twitter_Instagram
 sendMails/pruebas
 Clase_9_Email/Clase_9_Scrapping
-
+*.env
+APIKEY.txt
+/Clase10_IA_Script/ScriptLibreria/dist
+/Clase10_IA_Script/ScriptLibreria/__pycache__
+/Clase10_IA_Script/ScriptLibreria/build
+/Clase10_IA_Script/ScriptLibreria/main.spec
 
 
