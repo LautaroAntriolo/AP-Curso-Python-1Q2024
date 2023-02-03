@@ -3,7 +3,7 @@ import random
 import requests
 
 def img(mje):
-    openai.api_key = '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'
+    openai.api_key = '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'
     response = openai.Image.create(
     prompt=f'{mje}',
     n=1,

@@ -5,7 +5,7 @@ from google.oauth2 import service_account
 import random
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-KEY = 'Python\Clase_8_Google\key.json'
+KEY = 'Clase_9_Email\escritura\key.json'
 SPREADSHEET_ID = '1WOSvX9Cvv5c7NRLAzbwa_z1CybiQHkC2VzsU31QOZAw'
 
 creds = None
@@ -16,13 +16,14 @@ sheet = service.spreadsheets()
 
 # Debe ser una matriz por eso el doble [[]]
 
-values = [['Esto es un poema que quiero mandar', f'Esto puede ser cualquier cosa.']]
+values = [['Esto es un poema que quiero mandar', f'Esto puede ser cualquier cosa.', f'=IMAGE("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/EFDNZZ7FEEPSQNE4ATMVMKGXBE.jpg";4;70;70)']]
 
 # Llamamos a la api
-resultados = sheet.values().update(spreadsheetId=SPREADSHEET_ID,
-							range='H2',
-							valueInputOption='USER_ENTERED',
-							body={'values':values}).execute()
+for i in range(10,20):
+	resultados = sheet.values().update(spreadsheetId=SPREADSHEET_ID,
+								range=f'H{i}',
+								valueInputOption='USER_ENTERED',
+								body={'values':values}).execute()
 
 # print(f"Datos insertados correctamente.\n{(resultados.get('updates').get('updatedCells'))}")
 # %%
