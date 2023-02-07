@@ -1,9 +1,13 @@
 import openai
 import random
 import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def img(mje):
-    openai.api_key = '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'
+    openai.api_key = os.getenv('clave_API')
     response = openai.Image.create(
     prompt=f'{mje}',
     n=1,

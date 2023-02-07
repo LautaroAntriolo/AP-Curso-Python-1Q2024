@@ -1,6 +1,11 @@
 import openai
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 def prompt(preg_men):
-  openai.api_key = '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'
+  openai.api_key = os.getenv('clave_API')
   response = openai.Completion.create(
     model="text-davinci-003",
     prompt=f'{preg_men}',
@@ -13,10 +18,4 @@ def prompt(preg_men):
   rta = response.choices[0].text.strip()
   return (f'{rta}')
 
-## Prueba de funcionalidad
-mensaje = prompt("como sumar en python")
-print(mensaje)
-import os
-clave = os.getenv("API_KEY")
-print(clave)
 
