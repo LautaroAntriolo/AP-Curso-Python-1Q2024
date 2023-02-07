@@ -4,7 +4,7 @@ from googleapiclient.discovery import build
 from google.oauth2 import service_account
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-# KEY = 'Python\Clase_8_Google\key.json'
+KEY = 'Python\Clase_8_Google\key.json'
 KEY = 'key.json'
 
 # Escribe aquí el ID de tu documento:

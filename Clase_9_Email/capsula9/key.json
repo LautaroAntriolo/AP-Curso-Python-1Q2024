@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "capsula-377111",
+  "private_key_id": "14df8a106e429d122d50eb3b0af7fb37d3c391a9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDlpuml8FZOxp3x\nxm+u9tyT0inEr+fAboI6TpRRYhEGfrEPZD8yCi+iNBzTV7RsXqGmM+bcKG2fWmlS\nlctA9PoIGKQT4joZzoCg+GHyVRdyEGruH2lVrpMLg4efTgEMG7ZEO+AMB4c7P+eM\nnNak5/KuRasqM9QDUOz9NWhWFjUOfVHTK7k9PDGDPk7eTTKHF3WDJM5XxknahlaK\n2h+h1oQ2/si6qI4MN12BpWa2WkCVhq3nKsoqOunyXNRfBBZswDC0AWaHKtz/wYbi\nryv2QGs7bTLOokm4lx3BP8aTGCD+yv5kvuy4IyPPjyrB1eYRSyt/0E9fkaZ2r1x8\noi9ethEHAgMBAAECggEACdnY9l3Svtb8PXSpwDcJGaTWj9Vv12U0XDQmewXhi4ZV\nRj730h0gobsiwdoRJxxySnS58Ik+h+PvgN6dLfB3yah0Cx3cmimtnw9hZt70NxCx\n48N118+dXD8wA8sHy825ZlyQ7P3XAxIvBN7DNBhaHWKD5FNvtKNgXjEXEozxF7C3\n6D2ypO8SAOraQJ1iT/npLHzH8hY0F0D4Bl3iOZT5A9CqJt2lio0OsFU0J5lkuMZs\n3iUbTo0EurIPHemAXgg/pXAWqUsAAMNSHd4ZpdgrHdACj7nQ0SEwM3AH+i9oyT12\nbVkI0YEAjlANKccNgmdIr97DwGuB8nSEdL4Xu1PvqQKBgQDyhajLzoGrc7OT3QMg\nDAOZyrZYONzU6PttmeE8EUN7uiIy8leJ61eVspoSW7ZG/K1bzLN7LKPhGsNbP1XH\nT8/xIy4qVbOaX6mw17P4+zxbQ8cGClnQTpCzQ1XAQp+nZOAfI+MIZIxg8X6Qse82\n5n0IpzDYP9v9ZwxfMT0RrkVVqwKBgQDyaibIFFQVNCRwxBEnaa8wYihspu1YpE4d\nYjP0nz95NqPtIo8A5JDeA1MVbUTN9lZsjQvvDQVbnVu6l0rSaJOTKQlrR2Hfs4fv\nrOH30xidry5sK8m+yhOR4rh9H1y7y8HXw0+g834gy9ErB9uUJo3eCeXUyo/QukxT\nQU7K5PQeFQKBgCyGXXcNcsEHfPCoouo/SmnxzYhk6CYun/p/RdrBUKJmieDQnUG0\n81+IasD0FYLy4OD5s/npOC0bvMID3ru463RaAR/EnDS7W2wcLe6IMYyP5Po27EZS\nJj7DHfsuQCF7Y6pT7FqeGyexLotiH4j0x//OsikBkGH1iU/wukWEuTYBAoGBAOdt\nzj5/odJoaE278YCGFfmEDIHGT5urqOPGiEGG8wsezhsrPgklLOS3mc8/9UsIXXPe\nqED9VlsjfJpDq+v6aME6kUJ48IinliSMEWMOhlasEw60MzPRKiPBpk3V7itfmF0L\nmm7XZ1eaHcQOCWSD9ja/jkq7Y9dqtElbdQSg1ioNAoGBAIX9zQkzfvGv4CvhQrso\nSum0V5+m15LHEshpFz1KZqqdf4iOf4eYlzqPAukpnaD0PWU/+3PP3yFCZgpF++s0\n840+Zw6av+v3sp/eWltWlHcMQdtmMMgOjAQe/fce5jYJHxPlmK0/nxnoBpzzzzkg\nLm7dHGK+V4rM07dJ/pgS7azU\n-----END PRIVATE KEY-----\n",
+  "client_email": "capsulasap@capsula-377111.iam.gserviceaccount.com",
+  "client_id": "103272056532670008757",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/capsulasap%40capsula-377111.iam.gserviceaccount.com"
+}
