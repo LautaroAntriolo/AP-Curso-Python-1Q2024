@@ -1,3 +1,5 @@
+import datetime
+import random
 '''
 50 frases motivacionales generadas con IA
 '''
@@ -124,8 +126,6 @@ def elegirFrase(listaDeListas):
     return frase
 
 if __name__ == '__main__':
-    import datetime
-    import random
 
     with open('C:\Lautaro\AprendeProgramando\CursoPython2023\Python\Clase10_IA_Script\ScriptSinIA\mensaje.txt', 'a+') as archivo:
         archivo.write(f'\n{datetime.datetime.now().microsecond}, "{elegirFrase(Frases)}"')
