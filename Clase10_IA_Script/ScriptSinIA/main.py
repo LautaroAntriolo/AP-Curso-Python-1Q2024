@@ -1,5 +1,3 @@
-import datetime
-import random
 '''
 50 frases motivacionales generadas con IA
 '''
@@ -125,7 +123,12 @@ def elegirFrase(listaDeListas):
     frase = fraseDE[random.randint(0,len(fraseDE))]
     return frase
 
+'''
+muy importante que el archivo .bat tenga el formato correcto
+"Ruta del ejecutable de python.exe"1ESPACIO"Ruta del ejecutable.py"
+'''
 if __name__ == '__main__':
-
+    import datetime
+    import random
     with open('C:\Lautaro\AprendeProgramando\CursoPython2023\Python\Clase10_IA_Script\ScriptSinIA\mensaje.txt', 'a+') as archivo:
         archivo.write(f'\n{datetime.datetime.now().microsecond}, "{elegirFrase(Frases)}"')

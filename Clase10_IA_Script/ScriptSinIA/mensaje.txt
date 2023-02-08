@@ -1,4 +1,5 @@
 8148, "No esperes a que las condiciones sean perfectas para comenzar. Comienza con lo que tienes, donde estï¿½s."
-515332, "El ï¿½xito es una combinaciï¿½n de habilidad y actitud."
-418939, "La conciencia es el camino hacia la unidad."
-15731, "La conciencia es el camino hacia la armonía."
+716146, "El éxito es la capacidad de creer en ti mismo y en tus sueños."
+790159, "La conciencia es la base de la ética."
+13697, "Si quieres algo que nunca has tenido, tendrás que hacer algo que nunca has hecho."
+698151, "El éxito es una combinación de preparación y oportunidad."
