@@ -1,0 +1,16 @@
+Una API (Application Programming Interface) y es un conjunto de
+ instrucciones y protocolos
+ para construir software y permitir que diferentes 
+ aplicaciones se comuniquen entre sí.
+
+En Python vamos a ahcer esta comunicaciòn mediante la librerìa Requests
+
+Esta nos sirve para hacer 
+solicitudes a servidores web. Esto significa que puedes
+ usar requests para obtener información de un sitio web, 
+ enviar información a un sitio web, o realizar otras acciones
+  en un sitio web. Esto lo hace mediante peticiones: get o post
+
+Una solicitud Get se usa para recuperar datos 
+de una API, mientras que una solicitud Post se usa para enviar 
+datos a una API.

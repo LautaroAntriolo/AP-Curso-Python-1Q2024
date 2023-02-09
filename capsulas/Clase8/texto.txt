@@ -1,0 +1,10 @@
+1) Vamos a crear una cuenta en google cloud
+2) Creamos un proyecto para interactuar con la API de Google y decirle que nosotros vamos a usarla...
+3) Creamos el proyecto y nos aseguramos de estar trabajando en ese proyecto
+4) Buscamos la API de google sheets y la activamos
+5) Se abre la solapara para crear las credenciales que indican que tenemos permiso para manipular los datos
+6) Bscamos las credenciales (solapa izquierda) y las creamos (boton arriba) con la opcion cuenta de srevicio o (service account)
+7) En el punto uno le damos un nombre y en el punto dos buscamos primero proyect y despues editor
+8) Se genera un correo, lo guardamos en un block de notas y le damos click.
+9) Buscamos clave y generamos la clave  y elegimos el formato JSON.
+10) Buscmos en la carpeta y le cambiamos el nombre al archivo a key.json

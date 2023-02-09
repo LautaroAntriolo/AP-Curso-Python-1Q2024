@@ -1,0 +1,2 @@
+Hoy vamos a ver como movernos por el directorio, esto nos permite entre otras cosas, crear carpetas, modificarlas
+crear archivos, concoer el arbol de trabajo o conocer la versión de nuestra computadora. 
