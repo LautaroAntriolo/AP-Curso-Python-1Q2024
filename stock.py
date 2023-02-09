@@ -129,3 +129,9 @@ for i in mails(26):
     print(i)
 
 # %%
+import random
+
+random_float_list = [round(random.uniform(0, 1),3) for i in range(50)]
+
+print(random_float_list)
+# %%

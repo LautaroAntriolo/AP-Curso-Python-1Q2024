@@ -1,5 +1,1 @@
-8148, "No esperes a que las condiciones sean perfectas para comenzar. Comienza con lo que tienes, donde estï¿½s."
-716146, "El éxito es la capacidad de creer en ti mismo y en tus sueños."
-790159, "La conciencia es la base de la ética."
-13697, "Si quieres algo que nunca has tenido, tendrás que hacer algo que nunca has hecho."
-698151, "El éxito es una combinación de preparación y oportunidad."
+653191, "El ï¿½xito es la suma de pequeï¿½as victorias."

@@ -1,6 +1,6 @@
 import openai
 def prompt():
-  openai.api_key = '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'
+  openai.api_key = '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'
   preg_men = input("Escribí tu pregunta acá: \n")
   response = openai.Completion.create(
     model="text-davinci-003",

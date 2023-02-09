@@ -1,4 +1,30 @@
 '''
+25 mensajes de aliento generados con IA
+'''
+mensajes_de_aliento = [
+"Sigue adelante, tienes esto.",
+"No te rindas, estás haciendo un gran trabajo.",    
+"Creer en ti mismo es la clave del éxito.", 
+
+"La felicidad está dentro de ti.",    
+"No tengas miedo de equivocarte, es parte del crecimiento.",   
+"Todos tienen días malos, pero mañana es un nuevo día.",   
+"La vida es una montaña rusa, disfruta el viaje.",  
+"Eres más fuerte de lo que crees.",    
+"No te compares con otros, sé tú mismo.",    
+"Sigue tus sueños, no te detengas.",    
+"No te preocupes por lo que otros piensan, vive tu vida.",   
+"Cada día es una nueva oportunidad para ser feliz.",   
+"Confía en ti mismo y todo saldrá bien.",    
+"La vida es un regalo, aprovecha cada momento.",    
+"Todos cometemos errores, aprende de ellos.",    
+"La resiliencia es la clave para superar los obstáculos.",
+"El fracaso es un paso hacia el éxito.",    
+"No tengas miedo de ser diferente, eso es lo que te hace único.",
+"Cada día es una nueva oportunidad para ser mejor.",    
+"Eres valioso y mereces ser feliz."]
+
+'''
 50 frases motivacionales generadas con IA
 '''
 frases_motivacionales = [
@@ -116,19 +142,4 @@ frases_conciencia = [
     "La conciencia es el camino hacia la emoción positiva."
     ]
 
-Frases = [frases_motivacionales, frases_conciencia]
 
-def elegirFrase(listaDeListas):
-    fraseDE = random.choice(listaDeListas)
-    frase = fraseDE[random.randint(0,len(fraseDE))]
-    return frase
-
-'''
-muy importante que el archivo .bat tenga el formato correcto
-"Ruta del ejecutable de python.exe"1ESPACIO"Ruta del ejecutable.py"
-'''
-if __name__ == '__main__':
-    import datetime
-    import random
-    with open('C:\Lautaro\AprendeProgramando\CursoPython2023\Python\Clase10_IA_Script\ScriptSinIA\mensaje.txt', 'a+') as archivo:
-        archivo.write(f'\n{datetime.datetime.now().microsecond}, "{elegirFrase(Frases)}"')
