@@ -1,0 +1,2 @@
+# Trabajar con datos
+# pandas => Series, panel, dataframe
