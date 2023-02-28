@@ -14,7 +14,8 @@ plt.plot(x,y)
 plt.show()
 # %% GRafico de dispersión
 
-x = np.linspace(0,len(y),200)
+x = np.linspace(0,200,len(y))
+# Linspace genera len(y) puntos equidistantes entre 0 y 200
 y = [54,72,43,2,8,98,109,5,35,28,48,83,94,84,73,11,464,75,200,54]
 plt.scatter(x,y)
 plt.show()
