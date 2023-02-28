@@ -14,6 +14,7 @@ def temperaturas(cantDeNumeros, minIni=18, minFin=24, maxMin=24, maxFin=40):
         tempMax.append(numeros)
     return [tempMin, tempMax]
 
+print(temperaturas(10))
 # %% DNI
 
 

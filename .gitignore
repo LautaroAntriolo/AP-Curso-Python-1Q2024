@@ -7,7 +7,7 @@ Lib/
 Scripts/
 *.cfg
 *.ipynb
-entornoVirtual
+/entornoVirtual
 entornoVirtual/
 Twitter_Instagram
 sendMails/pruebas

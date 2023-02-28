@@ -142,4 +142,8 @@ frases_conciencia = [
     "La conciencia es el camino hacia la emoción positiva."
     ]
 
+'''
+otros mensajes de aliento
+'''
+mensajes_aliento = ["No te rindas, cada día es una oportunidad para comenzar de nuevo.",    "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",    "Aunque no lo creas, eres más fuerte de lo que piensas.",    "No te preocupes por los fracasos, son oportunidades para aprender y crecer.",    "Mantén la cabeza en alto y sigue adelante, mejores cosas están por venir.",    "No permitas que el miedo te detenga, toma riesgos y alcanza tus metas.",    "Recuerda que cada problema tiene una solución, solo tienes que encontrarla.",    "La perseverancia es la clave del éxito, sigue adelante sin importar las dificultades.",    "No te compares con otros, eres único y tienes tus propias fortalezas.",    "Cree en ti mismo, confía en tus habilidades y todo será posible."]
 
