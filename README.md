@@ -1,14 +1,10 @@
-<p align="center"> <img src ="https://github.com/LautaroAntriolo/Python/blob/main/img/APV_logo2.png"> </p>
-
-# Organización de las clases y posibles errores
-
 En todas las clases van a ver que tienen contenidos extras. Cosas que son importantes y cosas que son detalles o no tan importantes para este caso. La idea fue generar contenido para que los chicos que ya vienen con algún conocimiento previo, vean que pueden hacerlo de diferentes formas. 
 
 Por este motivo se decidieron temas, que tienen que ser los importantes a entender en la clase que terminarán por cumplir con los requisitos para el proyecto final. El curso se comenzó a pensar desde el proyecto, por lo que la estructura de la cursada es desde el proyecto final.
 
 Se agradece la intervención de mentores que conozcan python en códigos y/o explicaciones. 🤓
 
-## <h2 style="background-color:#E36B2C; color:black;">Clase 1️⃣</h2>
+## Clase 1️⃣
 
 ### Instalación de Python
 
@@ -61,6 +57,7 @@ Lo que hacemos con el enumerate, lo podemos hacer igualmente con la variable del
 3. Bucle for y condicionales no puede faltar, como en todos 😄
 
 ## Clase 3️⃣
+
 ### Datos importantes de la clase:
 
 1. Funciones:
@@ -91,3 +88,23 @@ la función Input la podemos usar para mostrar como funciona y para generar una 
                 continue
     
     ```
+    
+    ## Clase 4️⃣
+    
+    ### Datos importantes de la clase:
+    
+    1. Importar paquetes de libererías: La idea es que en el proyecto final no creen todo en un mismo archivo, sino que se organicen en un archivo donde tomen todos los datos, otro donde creen las funciones y otro donde ejecuten el script. Que entiendan que las librerías las pueden crear ellos y tambien usar las de otros. Creemos que si entienden mejor el concepto de librería buscarán también la forma de crear la documentación correcta  y buscarla si no entienden una función. 
+    2. Al instalar las librerías puede que el comando `pip install nombreDeLibrería` no funcione. Si ese comando tira algún error, hay que probar instalar las librerías de la siguiente forma: 
+    `python - m pip install nombreDeLibrería.`  .Si aún así sigue sin funcionar, hay que probar instalar pip de nuevo como se muestra en la clase 1.
+    3. Librerias: En esta parte **hay mas librerías de las que se usan**, pero es importante que las vayan teniendo presente de oído al menos para mas adelante. Las mas importantes en general serán **numpy, pandas, matplotlib, random y datetime**. Las demás las dejamos para aquellos alumnos que ya conozcan estas librerías y quieran practicar con alguna otra.
+        1. [Documentación de Numpy](https://numpy.org/doc/stable/user/quickstart.html) 
+        2. [Documentación de Pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide), [resumen de 3Wschools](https://www.w3schools.com/python/pandas/default.asp)
+        3. Documentación de matplotlib
+        
+        Random y datetime son mucho mas simples y se usan en ámbitos mas generales. 
+        d.  [Documentación random](https://docs.python.org/es/3/library/random.html)
+        
+        e.  [Documentación Datetime](https://docs.python.org/es/3/library/datetime.html)
+        
+    4. Seaborn : Esta librería está muy buena pero se la dejamos solo a los alumnos que ya conozcan Matplotlib. 
+    5. **De las buenas prácticas F-string y Docstring es lo mas importante!** Lo demás está por si algun alumno lo vió en el colegio. Si lo vieron, seguramente vieron format y ya no se usa mucho. Al que no sabe nada, directamente f-string. Al que sabe algo, le mostramos por que f-string es tan potente.
