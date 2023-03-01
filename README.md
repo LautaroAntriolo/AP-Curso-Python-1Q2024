@@ -89,22 +89,31 @@ la función Input la podemos usar para mostrar como funciona y para generar una 
     
     ```
     
-    ## Clase 4️⃣
+## Clase 4️⃣
     
-    ### Datos importantes de la clase:
+### Datos importantes de la clase:
     
-    1. Importar paquetes de libererías: La idea es que en el proyecto final no creen todo en un mismo archivo, sino que se organicen en un archivo donde tomen todos los datos, otro donde creen las funciones y otro donde ejecuten el script. Que entiendan que las librerías las pueden crear ellos y tambien usar las de otros. Creemos que si entienden mejor el concepto de librería buscarán también la forma de crear la documentación correcta  y buscarla si no entienden una función. 
-    2. Al instalar las librerías puede que el comando `pip install nombreDeLibrería` no funcione. Si ese comando tira algún error, hay que probar instalar las librerías de la siguiente forma: 
+1. Importar paquetes de libererías: La idea es que en el proyecto final no creen todo en un mismo archivo, sino que se organicen en un archivo donde tomen todos los datos, otro donde creen las funciones y otro donde ejecuten el script. Que entiendan que las librerías las pueden crear ellos y tambien usar las de otros. Creemos que si entienden mejor el concepto de librería buscarán también la forma de crear la documentación correcta  y buscarla si no entienden una función. 
+2. Al instalar las librerías puede que el comando `pip install nombreDeLibrería` no funcione. Si ese comando tira algún error, hay que probar instalar las librerías de la siguiente forma: 
     `python - m pip install nombreDeLibrería.`  .Si aún así sigue sin funcionar, hay que probar instalar pip de nuevo como se muestra en la clase 1.
-    3. Librerias: En esta parte **hay mas librerías de las que se usan**, pero es importante que las vayan teniendo presente de oído al menos para mas adelante. Las mas importantes en general serán **numpy, pandas, matplotlib, random y datetime**. Las demás las dejamos para aquellos alumnos que ya conozcan estas librerías y quieran practicar con alguna otra.
-        1. [Documentación de Numpy](https://numpy.org/doc/stable/user/quickstart.html) 
-        2. [Documentación de Pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide), [resumen de 3Wschools](https://www.w3schools.com/python/pandas/default.asp)
-        3. Documentación de matplotlib
+3. Librerias: En esta parte **hay mas librerías de las que se usan**, pero es importante que las vayan teniendo presente de oído al menos para mas adelante. Las mas importantes en general serán **numpy, pandas, matplotlib, random y datetime**. Las demás las dejamos para aquellos alumnos que ya conozcan estas librerías y quieran practicar con alguna otra.
+    1. [Documentación de Numpy](https://numpy.org/doc/stable/user/quickstart.html) 
+    2. [Documentación de Pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide), [resumen de 3Wschools](https://www.w3schools.com/python/pandas/default.asp)
+    3. Documentación de matplotlib
         
         Random y datetime son mucho mas simples y se usan en ámbitos mas generales. 
+        
         d.  [Documentación random](https://docs.python.org/es/3/library/random.html)
         
         e.  [Documentación Datetime](https://docs.python.org/es/3/library/datetime.html)
         
     4. Seaborn : Esta librería está muy buena pero se la dejamos solo a los alumnos que ya conozcan Matplotlib. 
     5. **De las buenas prácticas F-string y Docstring es lo mas importante!** Lo demás está por si algun alumno lo vió en el colegio. Si lo vieron, seguramente vieron format y ya no se usa mucho. Al que no sabe nada, directamente f-string. Al que sabe algo, le mostramos por que f-string es tan potente.
+
+## Clase 5️⃣
+
+### Datos importantes de la clase:
+
+1. Movernos entre el directorio:
+    1. Comandos cd, cd..m mkdir, rmdir, rd, md ⇒ La idea es que sepan que es la consola, se puedan mover por el directorio y entiendan donde están parados. Saber que podemos acceder a cualquier archivo desde el directorio.
+2. Ejecutar algún archivo desde el directorio con diferentes funciones. Lo mas importante es la sintaxis, el condicional if _ _ main_ _ == _ _main_ _ … Si crearon funciones, podrían trabajar toda la clase ejecutando las funciones desde el directorio, siempre y cuando las llamen dentro de este condicional. No podemos en este caso pasarle parámetros, pero podríamos usar la función input para crear un función que nos pida algún dato a completar.
