@@ -1,4 +1,4 @@
-<p align="center"> <img src ="https://aprendeprogramandoinscripciones.bue.edu.ar/img/Recursos-AP/Imagenes/LogoAP.png"> </p>
+<p align="center"> <img src ="https://github.com/LautaroAntriolo/Python/blob/main/img/APV_logo2.png"> </p>
 
 # Organización de las clases y posibles errores
 
