@@ -136,3 +136,19 @@ random_float_list = [round(random.uniform(0, 1),3) for i in range(50)]
 
 print(random_float_list)
 # %%
+listaRandom =["Esto es malo","Esto es bueno","Esto no se bien si es malo o bueno", "Este mensaje es confuso, pero me parece buena idea", "Creo que las cosas no pueden estar peor", "Colesterol Alto", "Sangre fria", "Sal en exceso","Bien","mal"]
+
+def etiquetar_mensajes(lista_mensajes):
+    etiquetas = []
+    for mensaje in lista_mensajes:
+        if "bueno" in mensaje or "buena" in mensaje or "Bien" in mensaje:
+            etiquetas.append("Positivo")
+        elif "malo" in mensaje or "mala" in mensaje or "peor" in mensaje or "confuso" in mensaje:
+            etiquetas.append("Negativo")
+        else:
+            etiquetas.append("Neutral")
+    return etiquetas
+
+print(etiquetar_mensajes(listaRandom))
+# %%
+
