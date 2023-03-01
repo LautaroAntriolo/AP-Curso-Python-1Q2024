@@ -152,3 +152,18 @@ def etiquetar_mensajes(lista_mensajes):
 print(etiquetar_mensajes(listaRandom))
 # %%
 
+def letra_a_numero(letra):
+    abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    return abecedario.index(letra.lower()) + 1
+
+def letraANumero(letra):
+    abcd = 'abcdefghijklmnñopqrstuvwxyz'
+    for index, valor in enumerate(abcd):
+        if letra.lower() == valor:
+            return index
+    
+print(letraANumero('f'))
+
+
+
+# %%
