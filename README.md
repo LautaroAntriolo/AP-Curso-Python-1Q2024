@@ -101,11 +101,11 @@ la función Input la podemos usar para mostrar como funciona y para generar una 
     2. [Documentación de Pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide), [resumen de 3Wschools](https://www.w3schools.com/python/pandas/default.asp)
     3. Documentación de matplotlib
         
-        Random y datetime son mucho mas simples y se usan en ámbitos mas generales. 
+    Random y datetime son mucho mas simples y se usan en ámbitos mas generales. 
+
+    iiii.  [Documentación random](https://docs.python.org/es/3/library/random.html)
         
-        d.  [Documentación random](https://docs.python.org/es/3/library/random.html)
-        
-        e.  [Documentación Datetime](https://docs.python.org/es/3/library/datetime.html)
+    iV.  [Documentación Datetime](https://docs.python.org/es/3/library/datetime.html)
         
     4. Seaborn : Esta librería está muy buena pero se la dejamos solo a los alumnos que ya conozcan Matplotlib. 
     5. **De las buenas prácticas F-string y Docstring es lo mas importante!** Lo demás está por si algun alumno lo vió en el colegio. Si lo vieron, seguramente vieron format y ya no se usa mucho. Al que no sabe nada, directamente f-string. Al que sabe algo, le mostramos por que f-string es tan potente.
