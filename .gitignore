@@ -6,7 +6,6 @@ include/
 Lib/
 Scripts/
 *.cfg
-*.ipynb
 /entornoVirtual
 entornoVirtual/
 Twitter_Instagram
