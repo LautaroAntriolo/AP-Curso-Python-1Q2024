@@ -68,6 +68,8 @@ Importante hacer incapié en que todas las funciones se pueden importar luego, p
 la función Input la podemos usar para mostrar como funciona y para generar una interacción pero al usar el formulario de google la olvidamos.
 5. Return: Clave mostrar lo que pasa con el return cuando tiene y no tiene prints dentro. Para impulsar que usen el print por fuera de la función cuando las estén probando.
 6. **Debugger:** No haremos una clase de debuggear, pero es importante que al crear una función comiencen a ver como va ejecutandose el código. Seguro nos sirve para mostrar lo del print y el return. 
+    Hay ideas que pueden servir en la carpeta de la clase: 
+    Te recomiendo crear el archivo con la extensión .ipynb para ejecutar linea a linea cada código. Si queda cómo estaría bueno que se lo mostremos a los estudiantes pero mas adelante lo tendremos que cambiar o transcribir a un .py para ejecutar el script desde la terminal
     
     Video tutorial: [https://www.youtube.com/embed/wdZWeWub7vs?start=83](https://www.youtube.com/embed/wdZWeWub7vs?start=83)
     
