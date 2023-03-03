@@ -18,4 +18,4 @@ def prompt(preg_men):
   rta = response.choices[0].text.strip()
   return (f'{rta}')
 
-
+print(prompt('que es el agua'))

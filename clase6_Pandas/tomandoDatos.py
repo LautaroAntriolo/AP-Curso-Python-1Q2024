@@ -4,12 +4,9 @@ import numpy as np
 
 path = "JugadoresSeleccion.xlsx"
 pd.read_excel(path)
-# %%
 path2 = "JugadoresSeleccion_2.xlsx"
 pd.read_excel(path2, sheet_name="segunda hoja")
-# %%
 
-path = "JugadoresSeleccion.xlsx"
 jugadores = pd.read_excel(path)
 print(jugadores["Nombre"])
 print(jugadores[jugadores['Nombre'] == "Lionel"])
@@ -17,7 +14,6 @@ print(jugadores[jugadores['Nombre'] == "Lionel"])
 
 
 # %%
-
 path = "JugadoresSeleccion.xlsx"
 jugadores = pd.read_excel(path)
 promEdad= sum(jugadores["Edad"])/len(jugadores["Edad"])

@@ -1,16 +1,28 @@
 #%%
 import requests
-
-datos = requests.get("https://www.afa.com.ar/es/")
-datoshtml = datos.text ## Tomo todo el contenido HTML de la página. Se ve muy mal
-datosheader = datos.headers
-print(datosheader)
 #%%
-datos_put = requests.put("https://www.afa.com.ar/es/")
-
-print(datos_put)
-# %%
-
+# Viblioteca de imagenes y videos de la nasa
+def infoAPI():
+  url_img = "https://api.nasa.gov/EPIC/api/natural/"
+  params = {
+      'api_key':"vDjkgJzZqrTySWVdli7YNAa8DP5MKDa6IAnZp2ag",
+  }
+  response = requests.get(url_img,params=params).json()
+  print(response)
+infoAPI()
+#%%
+parametros = {
+    "api_key": "vDjkgJzZqrTySWVdli7YNAa8DP5MKDa6IAnZp2ag"
+}
+datos = requests.get("https://api.nasa.gov/planetary/apod", params=parametros)
+if datos.status_code == 200:
+    results = datos.json()
+    print(results)
+else:
+  print("No se pudo obtener la imagen.")
+# %% APIs
+# obtener la imagen de la NASA diaria
+import requests
 parametros = {
     "api_key": "vDjkgJzZqrTySWVdli7YNAa8DP5MKDa6IAnZp2ag"
 }
@@ -27,29 +39,9 @@ if datos.status_code == 200:
 else:
     print("No se pudo obtener la imagen.")
 
-    
-# %%
 
-parametros = {
-    "api_key": "vDjkgJzZqrTySWVdli7YNAa8DP5MKDa6IAnZp2ag"
-}
-datos = requests.get("https://api.nasa.gov/planetary/apod", params=parametros)
-if datos.status_code == 200:
-    results = datos.json()
-    print(results)
-else:
-  print("No se pudo obtener la imagen.")
-# %%
-# Viblioteca de imagenes y videos de la nasa
-def infoAPI():
-  url_img = "https://api.nasa.gov/EPIC/api/natural/"
-  params = {
-      'api_key':"vDjkgJzZqrTySWVdli7YNAa8DP5MKDa6IAnZp2ag",
-  }
-  response = requests.get(url_img,params=params).json()
-  print(response)
-infoAPI()
-# %%
+
+# %% CORREGIR
 def fetchEPICImage():
   anio = '2019'
   mes = '06'
