@@ -1,6 +1,8 @@
 import os
 import openai
+from dotenv import load_dotenv
 
+load_dotenv()
 clave = os.getenv("API_KEY")
 openai.api_key = clave
 

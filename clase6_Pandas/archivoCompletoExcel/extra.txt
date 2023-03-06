@@ -1,0 +1,7 @@
+Este archivo tiene mas información sobre los jugadores de la seleccion que les permitirá compartirlo con sus alumnos
+para generar mas y mejores datos. Son todos reales y tienen relacion con el Mundial.
+Todos los datos funcionan pero hay que llamarlos con mayuscula. 
+## Ejemplos 
+El ejemplo está igual que en la docu de la clase pero con los datos de este excel.
+Hay mas y mejores combinaciones de datos para tomar. 
+Si queres toma los datos y subilos a la carpeta de archivos Completos

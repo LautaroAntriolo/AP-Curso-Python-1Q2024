@@ -58,11 +58,12 @@ xg = masgrandes["Nombre"]
 yg = masgrandes["Edad"]
 
 plt.plot(xc, yc)
+plt.plot(0,promEdad, label="promedio")
 plt.plot(xg,yg)
 
 plt.xlabel('Jugadores')
 plt.ylabel('Edad')
-
+plt.legend()
 plt.show()
 # %%
 path = "JugadoresSeleccion.xlsx"
@@ -78,4 +79,31 @@ plt.ylabel('Edad')
 
 plt.show()
 
+# %%
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+path = "JugadoresSeleccion.xlsx"
+jugadores = pd.read_excel(path)
+print(jugadores)
+
+promEdad= sum(jugadores["Edad"])/len(jugadores["Edad"])
+maschicos = jugadores[jugadores['Edad']<=promEdad]
+masgrandes = jugadores[jugadores['Edad']>=promEdad]
+
+xc = maschicos["Nombre"]
+yc = maschicos["Edad"]
+xg = masgrandes["Nombre"]
+yg = masgrandes["Edad"]
+
+plt.axhline(y=promEdad, color='r', label="promedio")
+plt.scatter(xc, yc, label="mas chicos")
+plt.scatter(xg,yg, label="mas grandes")
+
+plt.xlabel('Jugadores')
+plt.ylabel('Edad')
+
+plt.legend() # Muestro los label que le agregué a cada elemento
+plt.show()
 # %%
