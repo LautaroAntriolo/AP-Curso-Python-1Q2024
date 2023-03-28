@@ -1,6 +1,14 @@
 from lectura import *
-from graficos import graficoEdadEstudios
+from graficos import graficoEdadEstudios, EducacionEincentivos
+
+
+primario = contador_palabras(listasEnMinuscula(nivelEstudios),'primario completo')
+secundario = contador_palabras(listasEnMinuscula(nivelEstudios),'secundario completo')
+terciario = contador_palabras(listasEnMinuscula(nivelEstudios),'terciario completo')
+universitario = contador_palabras(listasEnMinuscula(nivelEstudios),'universitario completo')
+
 if __name__ == '__main__':
     todosLosValores(nombreHoja,inicio)
     archivoJSON(final)
-    graficoEdadEstudios()
+    graficoEdadEstudios(secundario, terciario, universitario, primario,edad)
+    EducacionEincentivos(Educacion, Incentivos)

@@ -33,23 +33,21 @@ def archivoJSON(final):
     return: crea un archivo llamado datos.json si este no existe, y si existe lo modifica para agregarle a la 
     clave de la fecha actual, el valor de la última fila
     '''
-    if os.path.exists('C:/Lautaro/AprendeProgramando/CursoPython2023/Python/DSD/datos.json'):
-            with open('C:/Lautaro/AprendeProgramando/CursoPython2023/Python/DSD/datos.json') as f:
+    fecha = date.today()
+    if os.path.exists('./DSD/datos.json'):
+            with open('./DSD/datos.json','r') as f:
                 data = json.load(f)
-                data[f'{datetime.now().date()}']['final'] = f'{final}'
-                with open('C:/Lautaro/AprendeProgramando/CursoPython2023/Python/DSD/datos.json', 'w') as f:
-                    json.dump(data, f)
+                if fecha not in data:
+                    data[f'{fecha}'] = {}
+                    data[f'{fecha}']['final'] = final
+                    data[f'{fecha}']['imagenes'] = {}
+            with open('./DSD/datos.json', 'w') as f:
+                json.dump(data, f)
     else:
-        data = {'inicio': 'B2', f'{datetime.now().date()}':{f'final':f'{final}','imagenes':{}}}
-        with open('C:/Lautaro/AprendeProgramando/CursoPython2023/Python/DSD/datos.json', 'w') as f:
+        data = {'inicio': 'B2', f'{fecha}':{f'final':f'{final}','imagenes':{}}}
+        with open('./DSD/datos.json', 'w') as f:
             json.dump(data, f)
     return final
-
-#!B:K => Coresponde a toda la hoja de cálculo sin la marca temporal
-def todosLosValores(nombreHoja,inicio): 
-     hoja = sheet.values().get(spreadsheetId=SPREADSHEET_ID,range=f'{nombreHoja}!{inicio}:K', majorDimension='COLUMNS').execute()['values']
-     return hoja
-
 def contador_palabras(lista, palabraClave):
     '''
     Le pasamos una lista y una palabra y nos devuelve la cantidad de veces que se repite esa palabra en la lista
@@ -62,6 +60,17 @@ def contador_palabras(lista, palabraClave):
         if elemento == palabraClave:
             contador += 1
     return contador
+def listasEnMinuscula(lista):
+    for i in range(len(lista)):
+        lista[i] = lista[i].lower()
+    return lista
+
+#!B:K => Coresponde a toda la hoja de cálculo sin la marca temporal
+def todosLosValores(nombreHoja,inicio): 
+     hoja = sheet.values().get(spreadsheetId=SPREADSHEET_ID,range=f'{nombreHoja}!{inicio}:K', majorDimension='COLUMNS').execute()['values']
+     return hoja
+
+
 
 allvalues = todosLosValores(nombreHoja,inicio)
 
@@ -72,6 +81,6 @@ nivelEstudios = allvalues[3][1:]
 nuevosProyectos = allvalues[4][1:]
 tiposDePlasticos =allvalues[5][1:]
 Educacion = allvalues[6][1:]
-incentivos = allvalues[7][1:]
+Incentivos = allvalues[7][1:]
 medidas = allvalues[8][1:]
 responsabilidad = allvalues[9][1:]
