@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pruebacapamentors",
+  "private_key_id": "87b792cfa5efd50732bbc92c404497376f8b7db6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCsx3eBiBFce24J\nt1OEQrEeCEK8bUmdXcrgoXN5Sm8peHGYmfxMAod9JS26Hdjv3YE5eealtTwXu9Ay\nrsdAZ8F5LogbxS1xxxjnbdWoMZYhJ3zvfBlr5zyCn2ViatqmLQVCW+QIL8+ripzv\nVzyX2SpsYYG7914tC2MShhvCoO4boWNxxznLaHUArqspavU3EyOq/xu+2Lf8hXgR\novdNPM74mX3qhB6vckO0ESiKMa6VOoaUwm/cq2j1G5sp5kkYG5t8JLWF8LfUt10S\nUtSFWWZ0PeO8K2Z83m+Vo1yJA0hOdrN1p6ihcW+qkf/devXTHAAOcFnHtXawjPCU\nWPG8iz6lAgMBAAECggEABP3FKsmIwNxy9xZj9AHuNnEkJmfc1M45FmirmpEnKXJI\ni9FE+9gl3Fxm2AXVNsa2HTgzjM1xxTjAgLpSWL62lN7egTjewXbwNf1TCwcVsHMA\n1bVG0bpuIdLjfaabFupdiMd5TLA+5lR8iKCDSFq2ckeV1R2GC7SUwdv8cNCv2D3y\n0cEpzoAHHUuCzlJrd1+V8RTyi6m2rlvdOaOMyEtYLihz8XMUh2K+ZiXSRcJz73fy\nlrhInBwY5YeUfQRAX11Gx/yr6tS1lnoeSU2GZwhl64I9p+rIUhl0qMDbrIYExKRn\nX8k+Omr6z2dMTNFIe99KWNSGKvSstnmcVyiElBQ1QQKBgQDtBByyoHEt8PXzDcRf\nz0mIHMG9/9/AGdFlErkaQCLKYZxxSZUezXpTWekhQRvhMrgaZ1J8J4ZyLPhWbZDi\nKgzhaIEwXNIkY7Z979Udr0Pg41Z71HVFRwTBiZP/Ju+FqDsO72a3+3fEvyfrW8qs\nc1DAtgtT5X+wO59ltfc9unvqQQKBgQC6njYhqkualP622JYU+h6MjsMC3XZ4kZnM\nAZ1OsEIDCNLHv6iWjZcEaa0xxDzR5DLW6Kmt0JDD2vhNATHA5rxTepRJkDSX8izz\nXEEb7+dZ+JgC17r3I9Q8eF3eQtmLMEQ6DIrVlUgYu1R8RSrr8686U3FcoNHtpkWx\n+koTZAUTZQKBgQCJok6r6AFxRTD9sGvtmyi/ErvrAnBDVHrFL8cvmDjbvy0imDEx\nDu9PAbIgbnerIVHJe2Bp2mX3XWfkgIGW5AZQyufiVrRtDz5FCYV/VGydZkatZ+Wl\nkiUP4j1/+HM08UlCVgEXK78UEFE1GjuqQtiM3+naETZB942LecyWGvmkQQKBgDcp\nhP62g9qRqCkMJHDW7ijGGkbCh75j634uC/2yhBC5jvSUZpT6DWW0hwlq5D92oMB9\nzYofWGtMUpEQhVBr48cZOLP1+FXhs//LiUNkypIBtY1Bj3Z2FMo7GiQUxpEqF0DB\nbFht4/3LgdGp8GIGiglHmP60WtlQiNFvFm5c5lMxAoGAYRmqkW6Oeb/UAJgeIsvJ\n1v49zFSo0BfniaF5eM3PyWE+0SubPcep3Xu5BB7Vl+bUMXLE6hR07uKnA5sBwlmj\nQf9utD4vNj2GZ0FRqAmbijWSSU9Sb9Wy36CDFwc2nQCPn6ZscbeAQucXH6Pyx6zc\nVBvlSddIlR0pSjADStOH3VU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "capamentores@pruebacapamentors.iam.gserviceaccount.com",
+  "client_id": "111042970724832995919",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/capamentores%40pruebacapamentors.iam.gserviceaccount.com"
+}

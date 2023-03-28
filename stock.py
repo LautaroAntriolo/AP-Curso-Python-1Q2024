@@ -31,10 +31,11 @@ def edad(n):
     import random
     Edad = []
     for i in range(n):
-        numeros = int(random.uniform(20, 37))
+        numeros = int(random.uniform(20, 60))
         Edad.append(numeros)
     return Edad
-
+edades = edad(50)
+print(edades)
 # %% Nombres Completos
 
 

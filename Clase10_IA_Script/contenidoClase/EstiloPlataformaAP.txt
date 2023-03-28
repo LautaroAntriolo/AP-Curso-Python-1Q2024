@@ -1,0 +1,7 @@
+<div style="display:flex; flex-direction:row; justify-content:space-around; alig-items:center; padding:5px; width:100%">
+
+<div></div>
+
+<p></p>
+
+style="width:60%"
