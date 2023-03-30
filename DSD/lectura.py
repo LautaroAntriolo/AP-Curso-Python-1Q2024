@@ -20,6 +20,7 @@ inicio = 'B2' # Cargo el inicio de la fila y la columna donde comenzaran a carga
 nombreHoja = 'plasticos' # El nombre de la hoja donde tomaremos los datos
 #Creo una función en google sheet para guardar el último valor de la fila. Guardo ese valor en una variable.
 final = (sheet.values().get(spreadsheetId=SPREADSHEET_ID,range=f'{nombreHoja}!M2', majorDimension='COLUMNS').execute()['values'][0][0])
+finalPorFila = (sheet.values().get(spreadsheetId=SPREADSHEET_ID,range=f'{nombreHoja}!M2', majorDimension='ROWS').execute()['values'][0][0])
 
 
 # Llamamos a la API con los datos guardados en las variables correspondientes. 
@@ -64,6 +65,12 @@ def listasEnMinuscula(lista):
     for i in range(len(lista)):
         lista[i] = lista[i].lower()
     return lista
+def listaUltimosMailsAgregados(receptLista,rutaDelJSON):
+        with open(f'{rutaDelJSON}', 'r') as archivo_json:
+            datos = json.load(archivo_json)
+            ultimaKey = list(datos.keys())[-1]
+            valor = int(datos[ultimaKey]['final'])-2
+        return receptLista[valor:]
 
 #!B:K => Coresponde a toda la hoja de cálculo sin la marca temporal
 def todosLosValores(nombreHoja,inicio): 
@@ -84,3 +91,4 @@ Educacion = allvalues[6][1:]
 Incentivos = allvalues[7][1:]
 medidas = allvalues[8][1:]
 responsabilidad = allvalues[9][1:]
+ultimosmails = listaUltimosMailsAgregados(mail, 'C:\Lautaro\AprendeProgramando\CursoPython2023\Python\DSD\datos.json')

@@ -1,5 +1,7 @@
 from lectura import *
-from graficos import graficoEdadEstudios, EducacionEincentivos
+from graficos import graficoEdadEstudios, EducacionEincentivos,MedidasResponsabilidad
+from mails import enviarMail
+
 
 
 primario = contador_palabras(listasEnMinuscula(nivelEstudios),'primario completo')
@@ -12,3 +14,5 @@ if __name__ == '__main__':
     archivoJSON(final)
     graficoEdadEstudios(secundario, terciario, universitario, primario,edad)
     EducacionEincentivos(Educacion, Incentivos)
+    MedidasResponsabilidad(medidas,responsabilidad)
+    enviarMail(ultimosmails,'No sirve Todavía', 'este sirve menos')

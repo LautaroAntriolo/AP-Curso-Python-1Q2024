@@ -96,6 +96,36 @@ def EducacionEincentivos(educacion, incentivos):
 
     ModificarJSON_IMG(fechaActual,'./DSD/datos.json','EducacionIntensivos')
 
+def MedidasResponsabilidad(medidas,responsabilidad):
+    medidasSi = contador_palabras(medidas,'si')
+    medidasNo = contador_palabras(medidas,'no')
+    empresa = contador_palabras(responsabilidad,'empresa')
+    individuo = contador_palabras(responsabilidad,'individuo')
+    
+    datos = [medidasSi, medidasNo]
+    categorias = ["Quiere", "Niega"]
+    colores = ["#FFD700", "#C0C0C0", "#FF6347", "#00FFFF", "#eeeFFF"]
+    plt.figure()
+    plt.suptitle("Medidas vs Responsabilidad")
+    
+    plt.subplot(1, 2, 1)#elijo la posición del gráfico dentro del subtplot
+    plt.title("Accion vs Inacción")
+    plt.pie(datos, labels=categorias, colors=colores, shadow=True, startangle=90, autopct="%0.1f %%")
 
+
+    datos = [empresa, individuo]
+    categorias = ["empresa", "individuo"]
+    colores = [ "#FF6347", "#00FFFF", "#eeeFFF","#FFD700", "#C0C0C0"]
+    
+    plt.subplot(1, 2, 2)#elijo la posición del gráfico dentro del subtplot
+    plt.title("Empresas e individuos")
+    plt.pie(datos, labels=categorias, colors=colores,autopct="%0.1f %%")
+
+    if not os.path.exists(f'./DSD/img/{fechaActual}'):
+        os.makedirs(f'./DSD/img/{fechaActual}')
+    # Guardar el gráfico en la carpeta img
+    plt.savefig(f'./DSD/img/{fechaActual}/MedidasYResponsabilidad.png')
+
+    ModificarJSON_IMG(fechaActual,'./DSD/datos.json','MedidasYResponsabilidad')
 
      
