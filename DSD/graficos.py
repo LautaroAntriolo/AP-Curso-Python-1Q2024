@@ -52,8 +52,12 @@ def graficoEdadEstudios(secundario, terciario, universitario, primario,edad):
     plt.title("Edades")
     unicos = Counter(edad)
     # Define los datos que quieres graficar
-    labels = unicos.keys()
+    labels = []
     sizes = unicos.values()
+    for key, value in unicos.items():
+        labels.append(f'{key} ({value})')
+    # Ordena las etiquetas de mayor a menor
+    labels, sizes = zip(*sorted(zip(labels, sizes), key=lambda x: x[1], reverse=True))
     # Define las opciones de visualización para el gráfico
     plt.pie(sizes, startangle=90, pctdistance=0.85)
     plt.legend(labels, loc='center left', bbox_to_anchor=(1.05, 0.5))

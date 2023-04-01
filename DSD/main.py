@@ -15,4 +15,7 @@ if __name__ == '__main__':
     graficoEdadEstudios(secundario, terciario, universitario, primario,edad)
     EducacionEincentivos(Educacion, Incentivos)
     MedidasResponsabilidad(medidas,responsabilidad)
-    enviarMail(ultimosmails,'No sirve Todavía', 'este sirve menos')
+    try:
+        enviarMail(ultimosmails,'No sirve Todavía', 'este sirve menos')
+    except:
+        print('No se pudo enviar el correo')
