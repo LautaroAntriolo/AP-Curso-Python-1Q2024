@@ -39,5 +39,13 @@
       "EducacionIntensivos": "./DSD/img/2023-03-31/EducacionIntensivos",
       "MedidasYResponsabilidad": "./DSD/img/2023-03-31/MedidasYResponsabilidad"
     }
+  },
+  "2023-04-01": {
+    "final": "67",
+    "imagenes": {
+      "graficoEdad": "./DSD/img/2023-04-01/graficoEdad",
+      "EducacionIntensivos": "./DSD/img/2023-04-01/EducacionIntensivos",
+      "MedidasYResponsabilidad": "./DSD/img/2023-04-01/MedidasYResponsabilidad"
+    }
   }
 }
