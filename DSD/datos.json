@@ -48,10 +48,7 @@
       "MedidasYResponsabilidad": "./DSD/img/2023-04-01/MedidasYResponsabilidad"
     }
   },
-  "2023-04-02": {
-    "final": "70",
-    "imagenes": {}
-  },
+  "2023-04-02": { "final": "70", "imagenes": {} },
   "2023-04-03": {
     "final": "82",
     "imagenes": {
@@ -66,6 +63,14 @@
       "graficoEdad": "./DSD/img/2023-04-04/graficoEdad",
       "EducacionIntensivos": "./DSD/img/2023-04-04/EducacionIntensivos",
       "MedidasYResponsabilidad": "./DSD/img/2023-04-04/MedidasYResponsabilidad"
+    }
+  },
+  "2023-04-05": {
+    "final": "136",
+    "imagenes": {
+      "graficoEdad": "./DSD/img/2023-04-05/graficoEdad",
+      "EducacionIntensivos": "./DSD/img/2023-04-05/EducacionIntensivos",
+      "MedidasYResponsabilidad": "./DSD/img/2023-04-05/MedidasYResponsabilidad"
     }
   }
 }

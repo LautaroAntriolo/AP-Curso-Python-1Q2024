@@ -1,10 +1,12 @@
 La idea de este DSD es generar un formulario que podamos trabajar y analizar desde python, para luego enviar un mail a las personas que sepan o no ciertas cosas.
 
+El DSD se debería pensar desde los temas de la clase, viendo las librerías y funciones en base al proyecto. Es bueno pensar que el Docstring será importante para... con F-string podrán hacer....
+
 ## Clase a clase
 
 ### Clase 4
 
- funciones y documentacion
+funciones y documentacion
 
 **contenidos importantes de la clase:**
 
@@ -32,6 +34,18 @@ funciones y directorio
 1. Consola (Windows-Mac) (cd, dir, mkdir, help).
 2. Librería os
 3. Estructura de Scripts.
+
+   * Estructuras
+     La idea es que tengan en carchivos diferentes funciones diferentes, esto les permitirá en esta clase, importar las funciones necesarias a un archivo [main.py](http://main.py) desde donde lo ejecutarán como Script principal. Generan el Script con su estructura correspondiente y lo corren.
+     Una posible estructura del archivo principal (el [main.py](http://main.py)) podría ser:
+     Desde la linea 1 hacia abajo podemos agregar diferentes cosas al archivo para simplificar su escalabilidad.
+     1. **Comentarios:** Podemos agregar algunos comentarios al inicio del script para explicar qué hace el script, quién lo escribió, la fecha de creación y cualquier otra información relevante.
+     2. **Importaciones** : Importar cualquier biblioteca o módulo necesario para ejecutar el script.
+     3. **Variables globales:** Si necesitamos definir variables globales, lo hacemos al inicio del script.
+     4. **Funciones** : Si tenemos funciones en el script, las podemos defínir después de las variables globales. Las funciones deben ser **autosuficientes** y no depender de otras partes del script. Puede ser la función de contar palabras o
+     5. **Código principal:** El código principal del script debe venir después de las definiciones de funciones. Si el script es sencillo, todo el código podría estar dentro de esta sección. Si es más complejo, sería mejor dividirlo en secciones separadas.
+     6. **Ejecución:** Al final del script, llama a la función principal o al código que deseas ejecutar dentro del condicional.
+     7. **Comentarios:** Agrega comentarios al final de tu script para explicar cualquier cosa que no sea obvia en el código. (optativo para cuando el archivo principal tenga funciones autosuficientes dentro del main)
 4. Vamos a crear funciones con Scripts.
 5. Matemáticas ⇒ extra
 
@@ -46,24 +60,36 @@ funciones y directorio
 4. Importante la librería **os** con:
    1. **makedirs**
    2. **os.path.exists**
+
       </aside>
 
 ### Clase 6
 
-Comienzo del DSD
+Toma de datos
 
-Contenidos de la clase:
+**contenidos de la clase:**
 
-Del DSD comenzamos a hacer:
-
-### Clase 7
-
-Comienzo del DSD
-
-Contenidos de la clase:
+* Tomar datos desde un archivo de Excel.
+* Graficar datos utilizando: Matplotlib - pandas
 
 Del DSD comenzamos a hacer:
 
+Haremos una breve conexión con el excel y conectaremos los datos. Aprenderemos lo básico de pandas, recalcando que si queremos mejorar en esta librería, estaá el curso de ciencia de datos. La idea es tener una idea de sus estructuras y mostrar que se pueden manejar como listas. Que guardemos los datos que queremos en variables y así organicemos los elementos para graficar.
+
+<aside>
+💡 **Crear funciones para graficar**
+Guardamos en variables los datos que queremos graficar
+Creamos una función que grafica cuando le pasamos dos listas
+
+</aside
+
+### Clase 7 
+
+JSON y Google
+
+Contenidos de la clase
+
+Del DSD comenzamos a hacer:
 
 ### Clase 8
 
@@ -72,7 +98,6 @@ Comienzo del DSD
 Contenidos de la clase:
 
 Del DSD comenzamos a hacer:
-
 
 ### Clase 9
 
