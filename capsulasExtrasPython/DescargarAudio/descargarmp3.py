@@ -6,7 +6,8 @@ import youtube_dl
 def mp3Download():
     # solicita el ingrese de la url
     print("________Aplicacion para descargar mp3__________")
-    video_url = input("Ingrese URL: ")
+    # video_url = input("Ingrese URL: ")
+    video_url = "https://drive.google.com/file/d/1NR9cU5VrkW3FfsYTmGxzlAOmtMWV5QUB/view"
     
     # Descarga y lo convierte a mp3
     video_info = youtube_dl.YoutubeDL().extract_info(

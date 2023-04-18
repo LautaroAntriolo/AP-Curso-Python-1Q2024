@@ -1,24 +1,20 @@
-#%% Gráficos Simples con matplotlib
+# Importar la librería matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
-#%% Gráficos de linea
-# Acepta tanto tuplas como listas o arrays
-# La principal diferencia entre las variables declaradas con () (TUPLAS) y [] (ARRAYS) es que las tuplas son colecciones ordenadas e inmutables de elementos, mientras que las listas son colecciones ordenadas y mutables de elementos.
 
-# x = (4,8,13,17,20)
-x = [4,8,13,17,20]
-y = (54, 67, 98, 78, 45)
+# Crear un array de valores x para la función
+x = np.linspace(0, 10, 100)
 
+# Crear un array de valores y para la función
+y = np.sin(x)
 
-plt.plot(x,y)
+# Crear el gráfico
+plt.plot(x, y)
+
+# Agregar títulos y etiquetas
+plt.title("Función seno")
+plt.xlabel("Valores de x")
+plt.ylabel("Valores de y")
+
+# Mostrar el gráfico
 plt.show()
-# %% GRafico de dispersión
-
-x = np.linspace(0,200,len(y))
-# Linspace genera len(y) puntos equidistantes entre 0 y 200
-y = [54,72,43,2,8,98,109,5,35,28,48,83,94,84,73,11,464,75,200,54]
-plt.scatter(x,y)
-plt.show()
-
-
-# %%
