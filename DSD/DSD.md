@@ -83,34 +83,77 @@ Creamos una función que grafica cuando le pasamos dos listas
 
 </aside
 
-### Clase 7 
 
-JSON y Google
+### **Clase 7** 
 
-Contenidos de la clase
+API, JSON y gráficos
 
-Del DSD comenzamos a hacer:
+**contenidos de la clase:**
+
+* Tomar datos desde una API.
+* API y JSON.
+* Graficar Datos utilizando Matplotlib y pandas.
+
+**Del DSD comenzamos a hacer:**
+
+<aside>
+💡 **Probando las funciones graficar**
+Probamos si las funciones que creamos, grafican tambien los datos que tomamos de la NASA.
+Les mostramos como podemos guardar la información en un JSON (manualmente). Si podemos, también en un txt. Mas adelante veremos como guardamos la info en un JSON automaticamente. Si llegamos probamos hacerlo acá.
+
+</aside>
 
 ### Clase 8
 
-Comienzo del DSD
+**contenidos de la clase:**
 
-Contenidos de la clase:
+* Llamada a la APIs de Google Cloud.
+* Los Forms de Google.
 
-Del DSD comenzamos a hacer:
+**Del DSD comenzamos a hacer:**
+
+Creamos la integración co google cloud. Podemos pensar las preguntas para un formulario y ver como nos devuelve los datos a python. Guardamos la info necesaria en variables y probamos que todo funciones bien.
+
+<aside>
+💡 **Probando formulario y python**
+Vemos la salida por la terminal de las respuestas al formulario de Google. Podemos armar ya un formulario para usar en el DSD o uno de prueba para mostrar como funciona todo.
+El código lo tienen los profes por lo que se tiene que compartir el código para que tomen los datos y hacer las conexiones con python.
+🐍Será importante guardar  **la api key y demas en un txt en VsCode** ! 🐍
+
+</aside>
 
 ### Clase 9
 
-Comienzo del DSD
+**contenidos de la clase:**
 
-Contenidos de la clase:
+* Crear fórmulas con los datos obtenidos ⇒ otras funciones.
+* Archivos txt y escribiendo en el archivo de google sheets.
+* Graficar los datos tomados desde Forms.
+* Envío de correos.
 
-Del DSD comenzamos a hacer:
+**Del DSD comenzamos a hacer:**
 
-### Clase 10
+La idea es transpolar lo visto con las funciones y librerías con los datos obtenidos del Form.
 
-Comienzo del DSD
+El txt lo usaremos para tener como una guía que no sea la terminal de lo que va ejecutando el programa…Si hay alguna duda, los alumnos mandaran el txt para corregir.
 
-Contenidos de la clase:
+<aside>
+💡 **Funciones-graficos-envio de correos- txt (opcional)**
+A medida que se van desarrollando los temas, y tomamos los datos del google sheets, podemos crear las funciones para graficar estos datos.
+La escritura en la hoja de cálculo de Google la podemos dejar para el final, dependiendo lo que quiera lograr el grupo con el proyecto final. La escritura del txt no es la mas importante porque quedaría unicamente para registrar información. Se podría pasar el código dependiendo el proyecto que presenten los alumnos.
 
-Del DSD comenzamos a hacer:
+</aside>
+
+### Clase 10 
+
+**contenidos de la clase:**
+
+IA y Scripts
+
+**Del DSD comenzamos a hacer:**
+
+<aside>
+💡 **Scrips e IA**
+Lo mas importante es crear un script con una estructura básica para correrlo desde VsCode. Si da el tiempo creamos el bat para ejecutarlo automaticamente. Usaremos la IA como herramienta sencilla para crear los mensaje que mandaremos por mail.
+
+</aside>
