@@ -131,14 +131,6 @@ print(mi_tupla)  # Salida: (1, 2, 3, 4)
    1. Comandos cd, cd..m mkdir, rmdir, rd, md ⇒ La idea es que sepan que es la consola, se puedan mover por el directorio y entiendan donde están parados. Saber que podemos acceder a cualquier archivo desde el directorio.
 2. Ejecutar algún archivo desde el directorio con diferentes funciones. Lo mas importante es la sintaxis, el condicional if _ _ main_ _ == _ *main* _ … Si crearon funciones, podrían trabajar toda la clase ejecutando las funciones desde el directorio, siempre y cuando las llamen dentro de este condicional. No podemos en este caso pasarle parámetros, pero podríamos usar la función input para crear un función que nos pida algún dato a completar.
 
-## Clase 5️⃣
-
-### Datos importantes de la clase:
-
-1. Movernos entre el directorio:
-   1. Comandos cd, cd..m mkdir, rmdir, rd, md ⇒ La idea es que sepan que es la consola, se puedan mover por el directorio y entiendan donde están parados. Saber que podemos acceder a cualquier archivo desde el directorio.
-2. Ejecutar algún archivo desde el directorio con diferentes funciones. Lo mas importante es la sintaxis, el condicional if _ _ main_ _ == _ *main* _ … Si crearon funciones, podrían trabajar toda la clase ejecutando las funciones desde el directorio, siempre y cuando las llamen dentro de este condicional. No podemos en este caso pasarle parámetros, pero podríamos usar la función input para crear un función que nos pida algún dato a completar.
-
 ## Clase 6️⃣
 
 ### Datos importantes de la clase:
