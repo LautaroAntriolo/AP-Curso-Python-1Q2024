@@ -130,3 +130,54 @@ print(mi_tupla)  # Salida: (1, 2, 3, 4)
 1. Movernos entre el directorio:
    1. Comandos cd, cd..m mkdir, rmdir, rd, md ⇒ La idea es que sepan que es la consola, se puedan mover por el directorio y entiendan donde están parados. Saber que podemos acceder a cualquier archivo desde el directorio.
 2. Ejecutar algún archivo desde el directorio con diferentes funciones. Lo mas importante es la sintaxis, el condicional if _ _ main_ _ == _ *main* _ … Si crearon funciones, podrían trabajar toda la clase ejecutando las funciones desde el directorio, siempre y cuando las llamen dentro de este condicional. No podemos en este caso pasarle parámetros, pero podríamos usar la función input para crear un función que nos pida algún dato a completar.
+
+## Clase 5️⃣
+
+### Datos importantes de la clase:
+
+1. Movernos entre el directorio:
+   1. Comandos cd, cd..m mkdir, rmdir, rd, md ⇒ La idea es que sepan que es la consola, se puedan mover por el directorio y entiendan donde están parados. Saber que podemos acceder a cualquier archivo desde el directorio.
+2. Ejecutar algún archivo desde el directorio con diferentes funciones. Lo mas importante es la sintaxis, el condicional if _ _ main_ _ == _ *main* _ … Si crearon funciones, podrían trabajar toda la clase ejecutando las funciones desde el directorio, siempre y cuando las llamen dentro de este condicional. No podemos en este caso pasarle parámetros, pero podríamos usar la función input para crear un función que nos pida algún dato a completar.
+
+## Clase 6️⃣
+
+### Datos importantes de la clase:
+
+1. Lo mínimo será conocer las bases de Pandas con sus funciones. Esto pensado para alguien que ya conoce python y quiere probar tomando los datos siempre con pandas y usar las funciones que ya trae. No vamos a profundizar en Pandas porque está el curso de Ciencia de Datos que usan puntualmente Pandas y otras librerías que vemos acá.
+2. Para tomar los datos desde el excel es importante que ya tenegamos aceitado trabajar con listas y diccionarios. Entonces capáz que está bueno realizar antes de la clase un juego o un repaso para entrar en tema con los contenidos frescos.
+3. Siempre que tomamos los datos los vamos a tomar como una lista o diccioanrio y los trabajaremos con sus respectivas funciones. Igualmente vamos a necesitar listas para graficar los valores. Hay archivo de matplotlib en github.
+
+## Clase 7️⃣
+
+### Datos importantes de la clase:
+
+La clase es bastante teórica, es un punto en el que podemos acortar los temas y dejar a los alumnos a que lean por su cuenta y avanzar con temas que nos quedaron pendientes o podemos repasar. Lo importante será entender los protocolos y saber que quiere decir un código 200, 400, 401 etc, para saber que está mal cuando consultemos la de Google.
+
+1. Aprenderemos como tomar datos desde una API
+2. La API de la NASA como ejemplo sencillo, mas que nada para ver como nos devuelve el JSON. Poder entenderlo y mostrar herramientas para visualizarlo. [JSONformatter](https://jsonformatter.curiousconcept.com/#)
+3. Probamos los datos de la NASA y generamos valores similares para crear una lista y simular que fueron tomados por un script para poder graficarlos.
+
+## Clase 8️⃣
+
+### Datos importantes de la clase:
+
+1. Lo principal será que los datos tomados en google sheets, se visualicen en la termial de python. Para eso podemos copiar y pegar el código que tenemos en el github y reemplazar las partes del código para que coincida con tus partes.
+   1. Generar y reemplazar la api key
+   2. Cambiar la URL de la hoja de google Sheet
+2. Las funciones que podamos crear, serán resultado de los datos que tomemos del google sheet, por lo que parece conveniente incentivar a que las preguntas sean de si y no, o numéricas.
+
+## Clase 9️⃣
+
+### Datos importantes de la clase:
+
+1. Seguimos tomando los datos del excel y graficandolos, trabajaremos en las funciones y en guardar la información en un txt o un json. Si podemos, guardamos los gráficos que generamos en una carpeta.
+2. Importante que sepamos crear en entornos y manipular un txt. Prestarle atención al nombre del archivo para que podamos crear diferentes carpetas con un mismo programa.
+3. Escribir la hoja de cálculo puede ser optativo. No será cien por ciento necesario para el DSD pero se podría generar un función que escriba por ejemplo un 1 en una casilla y con un condicional de excel cambiamos esa columna a una casilla check marcada o no.
+4. Enviar correos: No pongamos nuestro mail para probar! que cada uno ponga el suyo!
+   El mensaje tiene que ser sencillo, pero podemos nosotros generarles un template básico para enviar la información que crean necesaria.
+
+## Clase 🔟
+
+### Datos importantes de la clase:
+
+Vamos a explicar como usar la IA para trabajar en programación con python. Mas que entender que es la IA y como se genera, veremos como podemos utilizarla como una herramienta que nos ahorre tiempo.
