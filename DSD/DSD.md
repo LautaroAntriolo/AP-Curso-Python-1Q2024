@@ -84,6 +84,7 @@ Creamos una función que grafica cuando le pasamos dos listas
 </aside
 
 
+   
 ### **Clase 7** 
 
 API, JSON y gráficos
